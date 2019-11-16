@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.biss.entity.EmployeeEntity" table = "EMPLYE">
+      
+      <id name = "empId" type = "int" column = "EMP_ID"/>
+      
+      <property name = "eName" column = "ENAME" type = "java.lang.String"/>
+      <property name = "sal" column = "SAL" type = "double"/>
+      <property name = "job" column = "JOB" type = "java.lang.String"/>
+      
+   </class>
+</hibernate-mapping>
