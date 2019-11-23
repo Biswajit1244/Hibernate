@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	<hibernate-mapping>
+	  <class name="com.biss.entity.Insurance_policy" table="Insurance_Policy">
+	  	<id name="policyId" column="Policy_Id" type="int" length="10" >
+	  		<generator class="increment"/>
+	  	</id>
+	  	
+	  	<property name="policyName" column="Policy_Name" type="string" length="15"/>
+	  	<property name="policyType" column="Policy_Type" type="string" length="15"/>
+	  	<property name="price" column="Price" type="float" length="15" precision="2"/>
+	  	<property name="tenure" column="Tenure" type="float" length="10"/>
+	  
+	  </class>
+	</hibernate-mapping>
