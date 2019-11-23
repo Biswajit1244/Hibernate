@@ -8,12 +8,9 @@ public class HibernateUtil {
 	private static SessionFactory factory=null;
 	static {
 		Configuration cfg=null;
-		//Activate hibernate framework
-		cfg=new Configuration();
-		//load and locte hibernate configuration file
-		cfg.configure("hibernate.cfg.xml");
-		//Create SessionFactory object
-		factory=cfg.buildSessionFactory();
+		//Create Session factory object
+		factory=new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		
 	}
 	public  static  Session getSession() {
 		Session ses=null;
